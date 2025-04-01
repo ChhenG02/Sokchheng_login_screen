@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../widgets/progress_bar.dart';
 import '../widgets/custom_text_field.dart';
 import '../widgets/password_field.dart';
 import '../widgets/custom_checkbox.dart';
@@ -73,7 +72,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: AppTextStyles.heading1,
                 ),
                 const SizedBox(height: 12),
-                const ProgressBar(),
+                   Image.asset(
+        'assets/images/accent.png',  
+        height: 4,
+        ),
                 const SizedBox(height: 32),
                 CustomTextField(
                   hintText: 'Email',
